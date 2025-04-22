@@ -25,7 +25,7 @@ const Login = () => {
 
       const response = await api.post("/api/login", { cpf: cleanedCPF, password });
       localStorage.setItem("token", response.data.token);
-      navigate("/prontuario");
+      navigate("/register");
 
       const token = response.data.token;
       // Substitua por:
